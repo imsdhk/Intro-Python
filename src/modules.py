@@ -9,10 +9,11 @@ import os
 
 
 # Print out the plaform from sys:
-print()
+for arguments in sys.argv: 
+    print(arguments)
 
 # Print out the Python version from sys:
-print()
+print("python version",sys.version)
 
 
 
@@ -21,11 +22,16 @@ print()
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
-print()
+print("PROCESS ID BELOW: ")
+process = os.getpid()
+print(process)
+
 
 # Print the current working directory (cwd):
-print()
+cwd = os.getcwd()
+print("cwd is..",cwd)
 
 # Print your login name
-print()
+user = os.getlogin(); 
+print(user)
 

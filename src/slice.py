@@ -1,16 +1,18 @@
 a = [2, 4, 1, 7, 9, 6]
 
 # Output the second element: 4:
-print()
+
+print(a[1])
 
 # Output the second-to-last element: 9
-print()
+print(a[-2])
 
 # Output the last three elements in the array: [7, 9, 6]
-print()
+print(a[-3:])
 
 # Output the two middle elements in the array: [1, 7]
-print()
+mid = int(len(a)/2)
+print(a[mid : mid+2])
 
 # Output every element except the first one: [4, 1, 7, 9, 6]
 print()
